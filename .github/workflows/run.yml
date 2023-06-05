@@ -33,6 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd bin
-          Universalmer --build test.txt
+          ./Universalmer --build test.txt
           echo Add other actions to build,
           echo test, and deploy your project.
