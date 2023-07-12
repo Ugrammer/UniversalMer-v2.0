@@ -29,8 +29,8 @@
 
   EXAMPLE:
    FILE1:
-     <
-     ACGCCTGTGCCCACG
+     <\n
+     ACGCCTGTGCCCACG\n
    FILE2:
      <
      CCGGGTTTATC
