@@ -29,17 +29,17 @@
 
   EXAMPLE:
    FILE1:
-     <\n
-     ACGCCTGTGCCCACG\n
+   <
+   ACGCCTGTGCCCACG
    FILE2:
-     <
-     CCGGGTTTATC
-
+   <
+   CCGGGTTTATC
+   
    NEWFILE1_2: 
-     <
-     ACGCCTGTGCCCACG 
-     <
-     CCGGGTTTATC 
+   <
+   ACGCCTGTGCCCACG 
+   <
+   CCGGGTTTATC 
 
 
 #LIMITATION:
