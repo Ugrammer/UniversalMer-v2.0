@@ -22,9 +22,14 @@
 # HOW TO USE THE PROGRAM:
    Go to the directory of a file  /bin/MacOs/UniversalMer.  
    If there is no database file, run the program. 
-      -% ./UniversalMer -b  /input/xxx.fasta
+       % ./UniversalMer -b  /input/xxx.fasta
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.Then a user can choose a menu of program.
    After a database already exist in the same folder of the program, a user can run a program by
      -% ./UniversalMer -l Universal_merDB.umer
+
+# BASIC OF UNIVERSAL MER CODING
+  If you want to study the basic of Universal mer please visit at
+  
+    https://github.com/Ugrammer/Universal-Mer_Basic.git
 
    
