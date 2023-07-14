@@ -19,9 +19,9 @@
   If there is no argument, program will search for database file (Universal_merDB.umer) in the same folder with the program.
   After already build or load database, you can follow the instruction of the program to choose menu. 
 
- # HOW TO USE THE PROGRAM:
+# HOW TO USE THE PROGRAM:
    Go to the directory of a file  /bin/MacOs/UniversalMer.  
-   If there is no database file, run the program by 
+   If there is no database file, run the program. 
       -% ./UniversalMer -b  /input/xxx.fasta
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.Then a user can choose a menu of program.
    After a database already exist in the same folder of the program, a user can run a program by
