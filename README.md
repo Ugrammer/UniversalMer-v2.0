@@ -3,6 +3,9 @@
 # Overview
  <p> Universal-Mer is a k-mer counting tool for all possible size of k at once. The program can summarize the counting result of 1-mer to l-mer where l = the length of longest repeated substring occuring in the input sequence. The Input file can be text or fasta format. The input alphabet now is only {A, C, G, T}. After counting and building database of all possible length k of k-mer completed, A user can choose any size of k to count histogram, dump k-mer, query a substring, and summarize all possible k. The canonical k-mer form counting may require a quite more time than the ordinary form. The time for building database depends on the longest repeated substring in the sequence.</p>
 
+#ABOUT
+    Universal-mer is the model of encoding database of all possible size k-mer. The program is implemented by C language. 
+
 # REQUIREMENT
   **OS:** Windows10, MacOS_ARM64, MacOS_X64 <br>
   **RAM:** 8-64 GB, depend on the large size of the input sequence, approximately 32 GB for 200 million bp up. <br>
@@ -45,5 +48,9 @@
   If you want to study the basic of Universal mer please visit at
   
   coming soon
+
+# Author
+   Jittakorn Pullpothong, Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.
+
 
    
