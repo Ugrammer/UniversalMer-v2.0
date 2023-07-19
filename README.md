@@ -29,8 +29,8 @@
    
        % ./UniversalMer -b  /input/xxx.fasta
       
-   The program will build the database of all possible size k-mer as shown by a pic in the directory output.
-   After building database completef, you can choose the menu of the program. If the database already exist, you can run the program for the next time by
+   The program will build the database of all possible size k-mer.
+   After building database completed, you can choose the menu of the program. If the database already exist, you can run the program for the next time by
    
        % ./UniversalMer -l  Universal_merDB.umer
 
