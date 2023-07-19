@@ -34,7 +34,7 @@
    
        % ./UniversalMer -l  Universal_merDB.umer
 
-  ! Please don't forget to backup the database file for using in the next time.
+  ! Please don't forget to backup the database file for using in the next time. If not, the file will be deleted when you create a new one.
 
 # Example
   * The running program pics place in the folder /Output/ <br>
