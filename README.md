@@ -21,12 +21,17 @@
 
 # HOW TO USE THE PROGRAM:
    Go to the directory of a file  /bin/MacOs/UniversalMer.  <br>
-   If there is no database file, run the program.<br> <br>
-      <p> % ./UniversalMer -b  /input/xxx.fasta<br></p>
+   If there is no database file, run the program.<br>
+       % ./UniversalMer -b  /input/xxx.fasta<br>
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.<br>
    Then a user can choose a menu of program.
    After a database already exist in the same folder of the program, a user can run a program for the next time by<br>
-      <p> % ./UniversalMer -l  Universal_merDB.umer<br> </p>
+       % ./UniversalMer -l  Universal_merDB.umer<br>
+
+# Example
+  * The running program pics place in the folder /Output/ <br>
+  * The example of database file and input sequence file place in the folder /Example/ <br>
+  * The DNA input sequence used in the experiment of our work place in the folder /input/ <br>
 
 # BASIC OF UNIVERSAL MER CODING
   If you want to study the basic of Universal mer please visit at
