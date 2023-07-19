@@ -25,12 +25,15 @@
 
 # HOW TO USE THE PROGRAM:
    Go to the directory of a file  /bin/MacOs/UniversalMer.  <br>
-   If there is no database file, run the program.<br>
-       % ./UniversalMer -b  /input/xxx.fasta<br>
+   If there is no database file, run the program.
+   
+      >  % ./UniversalMer -b  /input/xxx.fasta
+      
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.<br>
    Then a user can choose a menu of program.
-   After a database already exist in the same folder of the program, a user can run a program for the next time by<br>
-       % ./UniversalMer -l  Universal_merDB.umer<br>
+   After a database already exist in the same folder of the program, a user can run a program for the next time by
+   
+      > % ./UniversalMer -l  Universal_merDB.umer
 
 # Example
   * The running program pics place in the folder /Output/ <br>
