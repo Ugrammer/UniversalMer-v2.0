@@ -1,7 +1,7 @@
 # Universal-Mer
   This is a command line tool for k-mer counting with all possible sizes of k at once.
 # Overview
-  Universal-Mer is a k-mer counting tool for all possible size of k at once. It can summarize the counting result of 1-mer to l-mer where l = the length of longest repeated substring occuring in the input sequence. The Input file can be .txt or fasta format. The input alphabet now is only {A, C, G, T}. After counting and building database of all possible length k of k-mer completed, users can choose any size of k to count histogram, or dump k-mer as they want. The canonical k-mer form may require a quite more time to count than ordinary form. The time for building database depends on the longest repeated substring in the sequence.
+ <p> Universal-Mer is a k-mer counting tool for all possible size of k at once. The program can summarize the counting result of 1-mer to l-mer where l = the length of longest repeated substring occuring in the input sequence. The Input file can be text or fasta format. The input alphabet now is only {A, C, G, T}. After counting and building database of all possible length k of k-mer completed, A user can choose any size of k to count histogram, dump k-mer, query a substring, and summarize all possible k. The canonical k-mer form counting may require a quite more time than the ordinary form. The time for building database depends on the longest repeated substring in the sequence.</p>
 
 # REQUIREMENT
   **OS:** Windows10, MacOS_ARM64, MacOS_X64 <br>
@@ -30,7 +30,7 @@
        % ./UniversalMer -b  /input/xxx.fasta
       
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.
-   After building database completef, a user can choose the menu of the program. If the database already exist, a user can run the program for the next time by
+   After building database completef, you can choose the menu of the program. If the database already exist, you can run the program for the next time by
    
        % ./UniversalMer -l  Universal_merDB.umer
 
