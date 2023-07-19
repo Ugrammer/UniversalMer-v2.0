@@ -14,14 +14,14 @@
         -l  FILE : to load Universal-mer database from FILE. (xxx.Umer) or (xxx.umer) 
         -h : to see how to use the program
 
-  If option is -b  FILE must be a text file or a fasta format file.
-  If option is -l  FILE must be a universal-mer database file with the extension '.umer' or '.Umer'. 
-  If there is no argument, program will search for database file (Universal_merDB.umer) in the same folder with the program.
-  After already build or load database, you can follow the instruction of the program to choose menu. 
+  If option is -b  FILE must be a text file or a fasta format file.<br>
+  If option is -l  FILE must be a universal-mer database file with the extension '.umer' or '.Umer'. <br>
+  If there is no argument, program will search for database file (Universal_merDB.umer) in the same folder with the program.<br>
+  After already build or load database, you can follow the instruction of the program to choose menu. <br>
 
 # HOW TO USE THE PROGRAM:
-   Go to the directory of a file  /bin/MacOs/UniversalMer.  
-   If there is no database file, run the program.<br> 
+   Go to the directory of a file  /bin/MacOs/UniversalMer.  <br>
+   If there is no database file, run the program.<br> <br>
       <p> % ./UniversalMer -b  /input/xxx.fasta<br></p>
    The program will build the database of all possible size k-mer as shown by a pic in the directory output.<br>
    Then a user can choose a menu of program.
