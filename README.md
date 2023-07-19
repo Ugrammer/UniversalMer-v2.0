@@ -5,7 +5,7 @@
 
 # REQUIREMENT
   **OS:** Windows10, MacOS_ARM64, MacOS_X64 <br>
-  **RAM:** 8-64 GB, depend on the large size of the input sequence, approximately 32 GB for 200 million bp. <br>
+  **RAM:** 8-64 GB, depend on the large size of the input sequence, approximately 32 GB for 200 million bp up. <br>
   
 # NAME :
   UniversalMer -The k-mer counting tool for all possible size of k at once. 
