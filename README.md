@@ -24,8 +24,8 @@
   After already build or load database, you can follow the instruction of the program to choose menu. <br>
 
 # HOW TO USE THE PROGRAM:
-   Go to the directory of a file  /bin/MacOs/UniversalMer.  <br>
-   If there is no database file, run the program.
+   Go to the directory of the executable file at  /bin/MacOs/UniversalMer.  <br>
+   If there is no database file, run the program to first count all possible k-mers by.
    
        % ./UniversalMer -b  /input/xxx.fasta
       
@@ -33,6 +33,8 @@
    After building database completed, you can choose the menu of the program. If the database already exist, you can run the program for the next time by
    
        % ./UniversalMer -l  Universal_merDB.umer
+
+  ! Please don't forget to backup the database file for using in the next time.
 
 # Example
   * The running program pics place in the folder /Output/ <br>
