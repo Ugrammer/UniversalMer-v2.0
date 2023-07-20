@@ -41,9 +41,9 @@
 # OUTPUT
   * Universal_merDB.Umer is the default database file generated in the same folder of the executable file.
   * xxxmerHisto.txt is the report of histogram of xxx-mer
-  * xxxmerCanonicalHisto.txt is the report of histogram of xxx-mer with canonical form.
+  * xxxmerCanonicalHisto.txt is the report of histogram of xxx-mer reducing canonical form.
   * xxx_mersData.txt is the xxx-mers text file with ordinary form.
-  * xxx_mersCanodata.txt is the xxx-mers text file with canonical form.
+  * xxx_mersCanodata.txt is the xxx-mers text file reducing canonical form.
   * allKsummarize.txt is the report of the number of distinct repeat and unique 1-mers to l-mers (the length of longest repeated substring).
     
 # Example
