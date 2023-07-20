@@ -1,6 +1,6 @@
-# Universal-Mer
+# UNIVERSAL-MER
   This is a command line tool for k-mer counting with all possible sizes of k at once.
-# Overview
+# OVERVIEW
 <p>Universal-Mer is the k-mer counting tool for all possible size of k at once. The program can summarize the counting result of  1-mer to l-mer exactly where l = the length of longest repeated substring in the input sequence which now is set the maximum length to 100000-mers. The program can  report exactly the number of all repeat (freq>1) and unique(freq = 1) mers without cutting off any low frequency mers. All k-mers where k>l occur only once in the input so it is easy to compute the number of them by L-k+1. </p>  
 <p>The Input file can be text or fasta format.The input alphabet now is only {A, C, G, T}. After counting and building database of all possible length k of k-mer completed, A user can choose in the menu any size of k to count histogram, dump k-mer, query a substring, and summarize all possible k.</p>
 <p>The option of canonical form counting is available in the program menu. The canonical k-mer form counting may require a quite more time than the ordinary form. The time and memory for building database depend on the length of input sequence (m) and  the longest repeated substring in the sequence (n), which are in O(mn). In the experiment of our work, with CPU apple M1, RAM 16 GB, the program used 30 GB of memory and 2000 - 2500 seconds for building the database from the input sequence 200 million bp(Fragaria vesca). From this database, the program can summarize the number of distinct repeat and unique substrings of 1-mer to 4715-mer(longest repeated substring) in 24 seconds.</p>
@@ -26,7 +26,7 @@
   If there is no argument, program will search for database file (Universal_merDB.umer) in the same folder with the program.<br>
   After already build or load database, you can follow the instruction of the program to choose menu. <br>
 
-# HOW TO USE THE PROGRAM:
+# HOW TO USE THE PROGRAM
    Go to the directory of the executable file at  /bin/MacOs/UniversalMer.  <br>
    If there is no database file, run the program to first count all possible k-mers by.
    
@@ -46,7 +46,7 @@
   * xxx_mersCanodata.txt is the xxx-mers text file reducing canonical form.
   * allKsummarize.txt is the report of the number of distinct repeat and unique 1-mers to l-mers (the length of longest repeated substring).
     
-# Example
+# EXAMPLE
   * The running program pics place in the folder /Output/ <br>
   * The example of database file and input sequence file place in the folder /Example/ <br>
   * The DNA input sequence used in the experiment of our work place in the folder /input/ <br>
@@ -56,7 +56,7 @@
   
   coming soon
 
-# Author
+# AUTHOR
 
   **Jittakorn Pullpothong**<br> Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.
 
