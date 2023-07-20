@@ -1,7 +1,7 @@
 # Universal-Mer
   This is a command line tool for k-mer counting with all possible sizes of k at once.
 # Overview
-<p> Universal-Mer is a k-mer counting tool for all possible size of k at once. The program can summarize the exact counting result of 1-mer to l-mer where l = the length of longest repeated substring occuring in the input sequence which now is set the maximum length to 100000-mers.</p>  
+<p>Universal-Mer is a k-mer counting tool for all possible size of k at once. The program can summarize the counting result of  1-mer to l-mer exactly where l = the length of longest repeated substring in the input sequence which now is set the maximum length to 100000-mers.</p>  
 <p>The Input file can be text or fasta format.The input alphabet now is only {A, C, G, T}. After counting and building database of all possible length k of k-mer completed, A user can choose any size of k to count histogram, dump k-mer, query a substring, and summarize all possible k.</p>
 <p>The canonical k-mer form counting may require a quite more time than the ordinary form. The time and memory for building database depend on the length of input sequence (m) and  the longest repeated substring in the sequence (n), which are in O(mn).</p>
 <p>The program is suitable for the work that want to count several large k of k-mers and see the overview of the number of distinct repeat and unique for all possible size of k-mers.</p>
