@@ -38,7 +38,14 @@
        % ./UniversalMer -l  Universal_merDB.umer
 
   ! Please don't forget to backup the database file for using in the next time. If not, the file will be deleted when you create a new one.
-
+# OUTPUT
+  * UniversalMer_DB.Umer is the default database file generated in the same folder of the executable file.
+  * xxxmerHisto.txt is the report of histogram of xxx-mer
+  * xxxmerCanonicalHisto.txt is the report of histogram of xxx-mer with canonical form.
+  * xxx_mersData.txt is the xxx-mers text file with ordinary form.
+  * xxx_mersCanodata.txt is the xxx-mers text file with canonical form.
+  
+  * 
 # Example
   * The running program pics place in the folder /Output/ <br>
   * The example of database file and input sequence file place in the folder /Example/ <br>
