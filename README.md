@@ -56,7 +56,8 @@
   coming soon
 
 # Author
-   Jittakorn Pullpothong, Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.
+
+  **Jittakorn Pullpothong**<br> Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.
 
 
    
