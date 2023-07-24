@@ -61,7 +61,8 @@
 
 # AUTHOR
 
-  **Jittakorn Pullpothong**<br> Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.
+  **Jittakorn Pullpothong**<br> Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.<br>
+  Email: <jittakorn.p@rumail.ru.ac.th>
 
 
    
