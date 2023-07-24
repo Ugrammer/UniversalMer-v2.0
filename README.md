@@ -56,8 +56,8 @@
   coming soon
   
 # LICENSE
-  ! YOU may install and use an unlimited number of copies for personal and education use.
-  ! YOU may not sell, decompile, disassemble, reverse engineer or modify this program.
+  ! YOU may install and use an unlimited number of copies for personal and education use.<br>
+  ! YOU may not sell, decompile, disassemble, reverse engineer or modify this program.<br>
 
 # AUTHOR
 
