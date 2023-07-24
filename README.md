@@ -52,8 +52,8 @@
   * The DNA input sequence used in the experiment of our work place in the folder /input/ <br>
 
 # BASIC OF UNIVERSAL MER CODING
-  If you want to study the basic of Universal mer please visit at
-  coming soon
+  If you want to study the basic of Universal mer please visit at..<br>
+  ..coming soon..
   
 # LICENSE
   ! YOU may install and use an unlimited number of copies for personal and education use.<br>
