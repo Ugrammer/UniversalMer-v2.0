@@ -53,8 +53,11 @@
 
 # BASIC OF UNIVERSAL MER CODING
   If you want to study the basic of Universal mer please visit at
-  
   coming soon
+  
+# LICENSE
+  ! YOU may install and use an unlimited number of copies for personal and education use.
+  ! YOU may not sell, decompile, disassemble, reverse engineer or modify this program.
 
 # AUTHOR
 
