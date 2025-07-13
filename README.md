@@ -52,19 +52,19 @@ Running Time:
              A Single k   : Use only one k for a single size such as 55
 
 EXAMPLE:   
-    universalmer -k250 -ad dna1.fasta -dx 28-100 
-    universalmer -k250 -ap protein1.fasta -d 28 55 100 230 
-    universalmer -k150 -ar rna1.fasta -dx 55
-    universalmer -k100 -n dna2.fasta -d 55
-    universalmer -k55 dna3.fasta
-    universalmer -k55 -m20 dna3.fasta
+    * universalmer -k250 -ad dna1.fasta -dx 28-100 
+    * universalmer -k250 -ap protein1.fasta -d 28 55 100 230 
+    * universalmer -k150 -ar rna1.fasta -dx 55
+    * universalmer -k100 -n dna2.fasta -d 55
+    * universalmer -k55 dna3.fasta
+    * universalmer -k55 -m20 dna3.fasta
 
-NOTE: The output will be created in the same folder of the executable file
-      If -a<alphabet> is not specified, the default alphabet will be DNA alphabet  
-      If -d, -dx is not specified,  the default will be as -dx 1-maximumk
-      Minimum frequency is 2 by default. If it is more than 2 the singletons won't be counted
-      Save spectrum file -t must be used together with -d to choose k spectrum
-      Use universal -h or -help for help
+NOTE:  * The output will be created in the same folder of the executable file
+       * If -a<alphabet> is not specified, the default alphabet will be DNA alphabet  
+      * If -d, -dx is not specified,  the default will be as -dx 1-maximumk
+      * Minimum frequency is 2 by default. If it is more than 2 the singletons won't be counted
+      * Save spectrum file -t must be used together with -d to choose k spectrum
+      * Use universal -h or -help for help
 
 # HOW TO USE THE PROGRAM
    
