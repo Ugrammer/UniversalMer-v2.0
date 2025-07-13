@@ -1,57 +1,95 @@
-# UNIVERSAL-MER
-  This is a command line tool for k-mer counting with all possible sizes of k at once.
+# UniversalMer
+  A k-mer counting tool for multiple sizes of k at once.
 # OVERVIEW
-<p>Universal-Mer is a k-mer counting tool for all possible size of k at once. More than typical k-mer counting tools, the program can summarize the exact counting result of  1-mers to  l-mers at once where l = the length of longest repeated substring in an input sequence where the maximum length now is set to 100000-mers. In the case k > l, all of k-mers surely occur only once in the input so the number of them  can be computed by L-k+1. The program can  report exactly the number of all repeat (freq>1) and unique(freq = 1) mers , and the number of all possible substrings of the sequences without cutting off any low frequency mers. </p>  
-<p>Input files can be text or fasta format.The input alphabet now is only {A, C, G, T}. The text file input will be concerned as fasta format without description line. After counting and building the database of all possible length k of k-mer completed, User can choose a size of k in the menu to count a histogram, dump k-mers, query substrings, and summarize all possible k.</p>
-<p>The program count k-mers regardless canonical form. However, the option of canonical form counting is available in the program menu. The canonical k-mers counting may require a quite more time than the ordinary form. The time and memory for building a database depend on the length of input sequences (m) and  the longest repeated substring in the sequences (n), which are in O(mn).  If the memory is insufficient, the program will run slower. In the experiment of a very long sequence (~200 millions bp from Fragaria Vesca), with CPU apple M1, RAM 16 GB, the program need approximately 30 GB of memory (insufficient memory) and use 2000 - 2500 seconds for building the database. With this database, the program can summarize the number of the distinct repeat and unique substrings of 1-mer to 4715-mer(longest repeated substring) within 30 seconds.</p>
-<p>The program is suitable for works that want to count several large k of k-mers and suitable for to see the overview of the number of distinct repeat and unique for all possible size of k-mers at once.</p>
+<p>UniversalMer is a k-mer counting tool for multiple size of k at once.The program counts and summarizes the exact frequency of all k-mers from 1-mer up to a user-defined maximum length (kmax). This kmax can be specified as any length or can be automatically determined by the longest repeated patterns found in the input sequence.</p> 
+<p>The available sequence alphabets support are DNA, RNA, and protein. The Input file must be fasta format with .txt or .fasta or .fna. </p>
+<p>The program offers several output options:
+    * Dumping all k-mers: Outputs a complete list of every k-mer found.
+    * Dumping chosen k-mer patterns: Provides lists of repeated or singleton k-mers.
+    * Dumping the k-mer spectrum: Generates a summary of k-mer frequencies.
+    * Note: The program does not support canonical k-mer counting. You can use the output files with other programs to find canonical patterns. </p>
+<p>The efficiency of the program depends on the sequence length (in base pairs) and the number of unique patterns.
+Memory Usage:
+    * For an input sequence of 6 million base pairs, generating 1 billion patterns with a maximum k-mer length of 20,000, the memory usage is approximately 70-80 GB.
+    * For shorter input lengths ranging from 20,000 to 1 million base pairs, the memory usage is much lower, from 8 MB to 150 MB, for 20 thousand to 1.5 million patterns with a maximum k-mer length of 30 to 300.    
+Running Time:
+    * Based on our experiments, for an input length of 6 million base pairs, which yields 1 billion patterns with a maximum k-mer size of 20,000, the running time is approximately 4500-5000 seconds.
+    * For smaller inputs (20,000 to 1 million base pairs) generating 20 thousand to 1.5 million patterns with the maximum k-mer sizes of 30 to 300, the running time ranges from 100 milliseconds to 6 seconds.</p>
 
 # REQUIREMENT
   **OS:** Windows10, MacOS_ARM64, MacOS_X64 <br>
-  **RAM:** 8-64 GB, depend on the large size of the input sequence, approximately 32 GB for 200 million bp up. <br>
+  **RAM:** 8-64 GB, depend on the large size of the input sequence and output patterns. We recommend RAM 32 GB for 200 million bp up. <br>
   
 # NAME :
-  UniversalMer  - A k-mer counting tool for all possible size of k at once. 
+  UniversalMer -The k-mer counting tool for multiple sizes of k at once. 
 
 # SYNOPSIS: 
-  UniversalMer [OPTIONS][FILE]
+   universalmer [OPTIONS][FILE][DUMP][K-SIZE]
 
 # DESCRIPTION:
-        -b FILE : to build new Universal-mer database with an input file (FILE).
-        -l  FILE : to load Universal-mer database from FILE. (xxx.Umer) or (xxx.umer) 
-        -h : to see how to use the program
 
-  If option is -b  FILE must be a text file or a fasta format file.<br>
-  If option is -l  FILE must be a universal-mer database file with the extension '.umer' or '.Umer'. <br>
-  If there is no argument, program will search for a database file (Universal_merDB.umer) in the same folder with the program.<br>
-  After already building or loading a database, you can follow the instruction of the program to choose menu. <br>
+ [OPTIONS]: For specifying maximum k and alphabet
+
+        -k<maximum lenght> : Example: -k100 for maximum k length = 100 (counting 1-mers to 100-mers)
+        -a<alphabet> : -ad for DNA alphabet = {A,C,G,T}
+                       -ar for RNA alphabet = {A,C,G,U}
+                       -ap for protein alphabet =  {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y}
+        -n : For not saving output file 
+        -t : For count and saving spectrum file
+        -m<minimum frequency>: Example: -m100 for minimum frequency = 100
+
+    [FILE]: For specifying an input path
+            Use a filename.fasta or .fna or .txt with fasta format
+
+    [DUMP]: For specifying dumping with singletons or not
+            -d<type>:   
+                  -d  :  Dump repeats and singleton k-mers
+                  -dx :  Dump only repeats k-mer without singleton k-mers
+
+    [K-SIZE]:For specifying the size of k for dumping
+             Range of k's : Use '-' for a range of k such as 10-100
+             Multiple k's : Use space between each size such as 28 38 55 65 
+             A Single k   : Use only one k for a single size such as 55
+
+EXAMPLE:   
+    universalmer -k250 -ad dna1.fasta -dx 28-100 
+    universalmer -k250 -ap protein1.fasta -d 28 55 100 230 
+    universalmer -k150 -ar rna1.fasta -dx 55
+    universalmer -k100 -n dna2.fasta -d 55
+    universalmer -k55 dna3.fasta
+    universalmer -k55 -m20 dna3.fasta
+
+NOTE: The output will be created in the same folder of the executable file
+      If -a<alphabet> is not specified, the default alphabet will be DNA alphabet  
+      If -d, -dx is not specified,  the default will be as -dx 1-maximumk
+      Minimum frequency is 2 by default. If it is more than 2 the singletons won't be counted
+      Save spectrum file -t must be used together with -d to choose k spectrum
+      Use universal -h or -help for help
 
 # HOW TO USE THE PROGRAM
+   
    Go to the directory of the executable file at  /bin/MacOs/UniversalMer.  <br>
-   If there is no database file, run the program to count all possible k-mers first by.
+   Assume that the input file is in directory /input/xxx.fasta
+   run command
    
-       % ./UniversalMer -b  /input/xxx.fasta
+       % ./UniversalMer -k1000 -n /input/xxx.fasta
       
-   The program will build the database of all possible size k-mer.
-   After building database completed, you can choose the menu of the program. If the database already exist, you can run the program with it for the next time by
-   
-       % ./UniversalMer -l  Universal_merDB.umer
+   The program will count k-mers of k = 1 to 1000 from xxx.fasta without save patterns file. 
+   CAUTION: Please concern the number of singleton patterns before dumping. Some chosen k may consume 10 GB up.
 
-  ! Please don't forget to backup the database file for using in the next time. If not, the database file will be deleted when you create a new one.
 # OUTPUT
-  * Universal_merDB.Umer is the default database file generated in the same folder of the executable file.
-  * xxxmerHisto.txt is the report of histogram of xxx-mer
-  * xxxmerCanonicalHisto.txt is the report of histogram of xxx-mer reducing canonical form.
-  * xxx_mersData.txt is the xxx-mers text file with ordinary form.
-  * xxx_mersCanodata.txt is the xxx-mers text file reducing canonical form.
-  * allKsummarize.txt is the report of the number of distinct repeat and unique 1-mers to l-mers (the length of longest repeated substring).
+  * The program will save output files in the same folder with the executable file.
+  * Allrepeatspattern.csv is the file of all patterns of 1-mers to kmax-mers.
+  * repeatsPatterns.csv is the file of repeat patterns of m-mers to n-mers as specified by user.
+  * singletonPatterns.csv is the file of singleton patterns of m-mer to n-mers as specified by user.
+  * kmersspectrum.csv is the file of spectrum information of m-mer to n-mers as specified by user.
+  * Note: if you choose -m to define minimum frequency > 2, the singleton pattern dumping will not be active.
     
 # EXAMPLE
   * The running program pics place in the folder /Output/ <br>
-  * The example of a database file and of input sequence files place in the folder /Example/ <br>
-  * The DNA input sequences used in the experiments of our work place in the folder /input/ <br>
+  * The list of DNA input sequence used in the experiment of our work place in the folder /input/ <br>
 
-# BASIC OF UNIVERSAL MER CODING
+# BASIC OF UNIVERSALMER CODING
   If you want to study the basic of Universal mer please visit at..<br>
   ..coming soon..
   
@@ -63,6 +101,3 @@
 
   **Jittakorn Pullpothong**<br> Department of computer engineering, Faculty of engineering, Ramkhamhaeng University, Thailand.<br>
   Email: <jittakorn.p@rumail.ru.ac.th>
-
-
-   
