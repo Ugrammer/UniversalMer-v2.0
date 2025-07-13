@@ -5,9 +5,9 @@ UniversalMer is a k-mer counting tool for multiple size of k at once.The program
 The available sequence alphabets support are DNA, RNA, and protein. The Input file must be fasta format with .txt or .fasta or .fna. 
 
 ## The program offers several output options:
- * Dumping all k-mers: Outputs a complete list of every k-mer found.
- * Dumping chosen k-mer patterns: Provides lists of repeated or singleton k-mers.
- * Dumping the k-mer spectrum: Generates a summary of k-mer frequencies.
+ * Dumping all k-mers: Outputs a complete list of every k-mer for k = 1 to maxk found.
+ * Dumping chosen k-mer patterns: Provides lists of repeated or singleton k-mers for multiple k's.
+ * Dumping the k-mer spectrum: Generates a summary of k-mer frequencies for multiple k's.
  * Note: The program does not support canonical k-mer counting. You can use the output files with other programs to find canonical patterns. 
 
 ## The efficiency of the program depends on the sequence length (in base pairs) and the number of unique patterns.
