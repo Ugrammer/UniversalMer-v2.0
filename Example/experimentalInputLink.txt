@@ -1,0 +1,16 @@
+1. NC_045512.2 : https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2/
+2. NC_000913.3: https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3
+3. L43967.2:  https://www.ncbi.nlm.nih.gov/nuccore/L43967.2
+4. NZ_LR214945.1: https://www.ncbi.nlm.nih.gov/nuccore/NZ_LR214945.1
+5. KF192507.1 :  https://www.ncbi.nlm.nih.gov/nuccore/KF192507.1
+6. NT_086358:  https://www.ncbi.nlm.nih.gov/nuccore/NT_086358
+7. NZ_CP021490: https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP021490
+8. NZ_CP019618: https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP019618
+9. NW_018394236:  https://www.ncbi.nlm.nih.gov/nuccore/NW_018394236.1
+10.NZ_CP011134:  https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP011134
+11.NC_023075: https://www.ncbi.nlm.nih.gov/nuccore/NC_023075
+12.NZ_CP009495: https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP009495
+13.AL607040: https://www.ncbi.nlm.nih.gov/nuccore/AL607040
+14.XP_011987916: https://www.ncbi.nlm.nih.gov/protein/XP_011987916
+15.AF086833:    https://www.ncbi.nlm.nih.gov/nuccore/AF086833
+16.AY545919: https://www.ncbi.nlm.nih.gov/nuccore/AY545919
