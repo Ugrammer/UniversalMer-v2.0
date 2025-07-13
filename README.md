@@ -83,16 +83,17 @@ The available sequence alphabets support are DNA, RNA, and protein. The Input fi
    CAUTION: Please concern the number of singleton patterns before dumping. Some chosen k may consume 10 GB up.
 
 # OUTPUT
-  * The program will save output files in the same folder with the executable file.
-  * Allrepeatspattern.csv is the file of all patterns of 1-mers to kmax-mers.
-  * repeatsPatterns.csv is the file of repeat patterns of m-mers to n-mers as specified by user.
-  * singletonPatterns.csv is the file of singleton patterns of m-mer to n-mers as specified by user.
-  * kmersspectrum.csv is the file of spectrum information of m-mer to n-mers as specified by user.
-  * Note: if you choose -m to define minimum frequency > 2, the singleton pattern dumping will not be active.
+
+Your program will save the output files in the same folder as the executable.  The output files are:
+ * Allrepeatspattern.csv: Contains all patterns of 1-mers to the maximum k-mer size (kmax).
+ * repeatsPatterns.csv: Contains repeat patterns for the user-specified range of m-mers to n-mers.
+ * singletonPatterns.csv: Contains singleton patterns for the user-specified range of m-mers to n-mers.
+ * kmersspectrum.csv: Contains spectrum information for the user-specified range of m-mers to n-mers.
+ * Note: If you use the -m flag to define a minimum frequency greater than 2, the singleton pattern dumping will not be active.
     
 # EXAMPLE
-  * The running program pics place in the folder /Output/ <br>
-  * The list of DNA input sequence used in the experiment of our work place in the folder /input/ <br>
+  * The running program pics place in the folder /Output/ 
+  * The list of DNA input sequence used in the experiment of our work place in the folder /input/ 
 
 # BASIC OF UNIVERSALMER CODING
   If you want to study the basic of Universal mer please visit at..<br>
