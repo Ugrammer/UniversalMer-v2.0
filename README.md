@@ -1,20 +1,24 @@
 # UniversalMer
   A k-mer counting tool for multiple sizes of k at once.
 # OVERVIEW
-<p>UniversalMer is a k-mer counting tool for multiple size of k at once.The program counts and summarizes the exact frequency of all k-mers from 1-mer up to a user-defined maximum length (kmax). This kmax can be specified as any length or can be automatically determined by the longest repeated patterns found in the input sequence.</p> 
-<p>The available sequence alphabets support are DNA, RNA, and protein. The Input file must be fasta format with .txt or .fasta or .fna. </p>
-<p>The program offers several output options:
-    * Dumping all k-mers: Outputs a complete list of every k-mer found.
-    * Dumping chosen k-mer patterns: Provides lists of repeated or singleton k-mers.
-    * Dumping the k-mer spectrum: Generates a summary of k-mer frequencies.
-    * Note: The program does not support canonical k-mer counting. You can use the output files with other programs to find canonical patterns. </p>
-<p>The efficiency of the program depends on the sequence length (in base pairs) and the number of unique patterns.
-Memory Usage:
-    * For an input sequence of 6 million base pairs, generating 1 billion patterns with a maximum k-mer length of 20,000, the memory usage is approximately 70-80 GB.
-    * For shorter input lengths ranging from 20,000 to 1 million base pairs, the memory usage is much lower, from 8 MB to 150 MB, for 20 thousand to 1.5 million patterns with a maximum k-mer length of 30 to 300.    
-Running Time:
-    * Based on our experiments, for an input length of 6 million base pairs, which yields 1 billion patterns with a maximum k-mer size of 20,000, the running time is approximately 4500-5000 seconds.
-    * For smaller inputs (20,000 to 1 million base pairs) generating 20 thousand to 1.5 million patterns with the maximum k-mer sizes of 30 to 300, the running time ranges from 100 milliseconds to 6 seconds.</p>
+UniversalMer is a k-mer counting tool for multiple size of k at once.The program counts and summarizes the exact frequency of all k-mers from 1-mer to a user-defined maximum length (kmax). This kmax can be specified as any length or can be automatically determined by the longest repeated patterns found in the input sequence.
+The available sequence alphabets support are DNA, RNA, and protein. The Input file must be fasta format with .txt or .fasta or .fna. 
+
+## The program offers several output options:
+ * Dumping all k-mers: Outputs a complete list of every k-mer found.
+ * Dumping chosen k-mer patterns: Provides lists of repeated or singleton k-mers.
+ * Dumping the k-mer spectrum: Generates a summary of k-mer frequencies.
+ * Note: The program does not support canonical k-mer counting. You can use the output files with other programs to find canonical patterns. 
+
+## The efficiency of the program depends on the sequence length (in base pairs) and the number of unique patterns.
+
+## Memory Usage:
+ * For an input sequence of 6 million base pairs, generating 1 billion patterns with a maximum k-mer length of 20,000, the memory usage is approximately 70-80 GB.
+ * For shorter input lengths ranging from 20,000 to 1 million base pairs, the memory usage is much lower, from 8 MB to 150 MB, for 20 thousand to 1.5 million patterns with a maximum k-mer length of 30 to 300.    
+    
+## Running Time:
+ * Based on our experiments, for an input length of 6 million base pairs, which yields 1 billion patterns with a maximum k-mer size of 20,000, the running time is approximately 4500-5000 seconds.
+ * For smaller inputs (20,000 to 1 million base pairs) generating 20 thousand to 1.5 million patterns with the maximum k-mer sizes of 30 to 300, the running time ranges from 100 milliseconds to 6 seconds.
 
 # REQUIREMENT
   **OS:** Windows10, MacOS_ARM64, MacOS_X64 <br>
@@ -51,26 +55,27 @@ Running Time:
              Multiple k's : Use space between each size such as 28 38 55 65 
              A Single k   : Use only one k for a single size such as 55
 
-EXAMPLE:   
-    * universalmer -k250 -ad dna1.fasta -dx 28-100 
-    * universalmer -k250 -ap protein1.fasta -d 28 55 100 230 
-    * universalmer -k150 -ar rna1.fasta -dx 55
-    * universalmer -k100 -n dna2.fasta -d 55
-    * universalmer -k55 dna3.fasta
-    * universalmer -k55 -m20 dna3.fasta
+## EXAMPLE:   
+ * universalmer -k250 -ad dna1.fasta -dx 28-100 
+ * universalmer -k250 -ap protein1.fasta -d 28 55 100 230 
+ * universalmer -k150 -ar rna1.fasta -dx 55
+ * universalmer -k100 -n dna2.fasta -d 55
+ * universalmer -k55 dna3.fasta
+ * universalmer -k55 -m20 dna3.fasta
 
-NOTE:  * The output will be created in the same folder of the executable file
-       * If -a<alphabet> is not specified, the default alphabet will be DNA alphabet  
-      * If -d, -dx is not specified,  the default will be as -dx 1-maximumk
-      * Minimum frequency is 2 by default. If it is more than 2 the singletons won't be counted
-      * Save spectrum file -t must be used together with -d to choose k spectrum
-      * Use universal -h or -help for help
+## NOTE: 
+ * The output will be created in the same folder of the executable file
+ * If -a<alphabet> is not specified, the default alphabet will be DNA alphabet  
+ * If -d, -dx is not specified,  the default will be as -dx 1-maximumk
+ * Minimum frequency is 2 by default. If it is more than 2 the singletons won't be counted
+ * Save spectrum file -t must be used together with -d to choose k spectrum
+ * Use universal -h or -help for help
 
 # HOW TO USE THE PROGRAM
-   
-   Go to the directory of the executable file at  /bin/MacOs/UniversalMer.  <br>
-   Assume that the input file is in directory /input/xxx.fasta
-   run command
+
+ * Go to the directory of the executable file at  /bin/MacOs/UniversalMer. 
+ *  Assume that the input file is in directory /input/xxx.fasta
+ *  run command
    
        % ./UniversalMer -k1000 -n /input/xxx.fasta
       
