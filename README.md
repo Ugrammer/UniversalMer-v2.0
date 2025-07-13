@@ -93,7 +93,7 @@ Your program will save the output files in the same folder as the executable fil
     
 # EXAMPLE
   * The running program pics place in the folder /Output/ 
-  * The list of DNA input sequence used in the experiment of our work place in the folder /input/ 
+  * The list of DNA input sequence used in the experiment of our work place in the folder /Example/input/ 
 
 # BASIC OF UNIVERSALMER CODING
   If you want to study the basic of Universal mer please visit at..<br>
