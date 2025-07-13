@@ -1,5 +1,5 @@
 # UniversalMer
-  A k-mer counting tool for multiple sizes of k at once.
+  A CLI k-mer counting tool for multiple sizes of k at once.
 # OVERVIEW
 UniversalMer is a k-mer counting tool for multiple size of k at once.The program counts and summarizes the exact frequency of all k-mers from 1-mer to a user-defined maximum length (kmax). This kmax can be specified as any length or can be automatically determined by the longest repeated patterns found in the input sequence.
 The available sequence alphabets support are DNA, RNA, and protein. The Input file must be fasta format with .txt or .fasta or .fna. 
