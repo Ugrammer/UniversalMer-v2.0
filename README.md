@@ -89,6 +89,7 @@ The available sequence alphabets support are DNA, RNA, and protein. The Input fi
 # OUTPUT
 
 Your program will save the output files in the current directory.  The output files are:
+
  * Allrepeatspattern.csv: Contains all patterns of 1-mers to the maximum k-mer size (kmax).
  * repeatsPatterns.csv: Contains repeat patterns for the user-specified range of m-mers to n-mers.
  * singletonPatterns.csv: Contains singleton patterns for the user-specified range of m-mers to n-mers.
