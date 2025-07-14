@@ -1,3 +1,7 @@
+# UPDATE version 2.0.0
+
+* Improve the algorithm and command-line flag.
+
 # UniversalMer
   A CLI k-mer counting tool for multiple sizes of k at once.
 # OVERVIEW
