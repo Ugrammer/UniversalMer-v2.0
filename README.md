@@ -21,7 +21,7 @@ The available sequence alphabets support are DNA, RNA, and protein. The Input fi
  * For shorter input lengths ranging from 20,000 to 1 million base pairs, the memory usage is much lower, from 8 MB to 150 MB, for 20 thousand to 1.5 million patterns with a maximum k-mer length of 30 to 300.    
     
 ## Running Time:
- * Based on our experiments, for an input length of 6 million base pairs, which yields 1 billion patterns with a maximum k-mer size of 20,000, the running time is approximately 4500-5000 seconds.
+ * Based on our experiments with Macbook M1, RAM 16 GB, for an input length of 6 million base pairs, which yields 1 billion patterns with a maximum k-mer size of 20,000, the running time is approximately 4500-5000 seconds.
  * For smaller inputs (20,000 to 1 million base pairs) generating 20 thousand to 1.5 million patterns with the maximum k-mer sizes of 30 to 300, the running time ranges from 100 milliseconds to 6 seconds.
 
 # REQUIREMENT
@@ -36,8 +36,8 @@ The available sequence alphabets support are DNA, RNA, and protein. The Input fi
 
 # DESCRIPTION:
 
- [OPTIONS]: For specifying maximum k and alphabet
-
+    [OPTIONS]: For specifying maximum k and alphabet
+ 
         -k<maximum lenght> : Example: -k100 for maximum k length = 100 (counting 1-mers to 100-mers)
         -a<alphabet> : -ad for DNA alphabet = {A,C,G,T}
                        -ar for RNA alphabet = {A,C,G,U}
